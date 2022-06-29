@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarDayIcon">
+        <attr name="size" format="dimension"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="verticalLineWidth" format="dimension"/>
+        <attr name="verticalLineHeight" format="dimension"/>
+        <attr name="verticalLinePadding" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>
