@@ -1,37 +1,69 @@
 # CalendarDayIcon
-
-#### 介绍
+[![](https://jitpack.io/v/zhumj/CalendarDayIcon.svg)](https://jitpack.io/#zhumj/CalendarDayIcon)
+## 介绍
 背景是线条日历、内容是文本 的控件
 
-#### 软件架构
-软件架构说明
+![截图](./pic/pic.png)
 
+## 使用
+### Step 1. Add the JitPack repository to your build file
+    Add it in your root build.gradle at the end of repositories:
+    ```
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
 
-#### 安装教程
+### Step 2. Add the dependency
+    ```
+    dependencies {
+        implementation 'com.github.zhumj:CalendarDayIcon:Tag'
+    }
+    ```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 属性
+```
+<declare-styleable name="CalendarDayIcon">
+    // 整个大小
+    <attr name="size" format="dimension"/>
+    // 外框线宽度
+    <attr name="lineWidth" format="dimension"/>
+    // 竖线宽度
+    <attr name="vLineWidth" format="dimension"/>
+    // 竖线高度
+    <attr name="vLineHeight" format="dimension"/>
+    // 竖线左右两侧间隔
+    <attr name="vLinePadding" format="dimension"/>
+    // 倒角半径
+    <attr name="radius" format="dimension"/>
+    // 文字
+    <attr name="text" format="string"/>
+    // 文字大小
+    <attr name="textSize" format="dimension"/>
+    // 外框线颜色
+    <attr name="lineColor" format="color"/>
+    // 文字颜色
+    <attr name="textColor" format="color"/>
+</declare-styleable>
+```
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 方法
+```
+// 设置整体大小
+setSize(size: Int)
+// 设置各参数
+setParam(
+    lineWidth: Float = this.lineWidth,
+    vLineWidth: Float = this.vLineWidth,
+    vLineHeight: Float = this.vLineHeight,
+    vLinePadding: Float = this.vLinePadding,
+    radius: Float = this.radius,
+    text: String = this.textStr,
+    textSize: Float = this.textSize,
+    @ColorInt lineColor: Int = this.lineColor,
+    @ColorInt textColor: Int = this.textColor
+)
+```

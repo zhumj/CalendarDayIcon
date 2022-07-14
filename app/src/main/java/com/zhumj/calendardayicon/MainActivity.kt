@@ -9,6 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val calendarDayIcon = findViewById<CalendarDayIcon>(R.id.calendarDayIcon)
-        calendarDayIcon.setText("02")
+        calendarDayIcon.setParam(text = "02")
     }
 }
